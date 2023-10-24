@@ -1,0 +1,113 @@
+CRITICAL - 2023-10-22 01:02:49 --> Invalid file: "Mascota/mostrar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Mascota/mostrar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Mascota/mostrar', [], true)
+ 3 APPPATH\Controllers\MascotaController.php(11): view('Mascota/mostrar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->mostrar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-22 01:03:53 --> syntax error, unexpected identifier "view", expecting ";"
+in APPPATH\Controllers\MascotaController.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Controllers\\MascotaController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MascotaController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MascotaController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\MascotaController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-22 01:10:32 --> Undefined variable $mascotas
+in APPPATH\Views\Mascotas\mostrar.php on line 5.
+ 1 APPPATH\Views\Mascotas\mostrar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotas', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Mascotas/mostrar', [], true)
+ 5 APPPATH\Controllers\MascotaController.php(15): view('Mascotas/mostrar')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-22 01:10:36 --> Undefined variable $mascotas
+in APPPATH\Views\Mascotas\mostrar.php on line 5.
+ 1 APPPATH\Views\Mascotas\mostrar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotas', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Mascotas/mostrar', [], true)
+ 5 APPPATH\Controllers\MascotaController.php(15): view('Mascotas/mostrar')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-22 01:10:37 --> Undefined variable $mascotas
+in APPPATH\Views\Mascotas\mostrar.php on line 5.
+ 1 APPPATH\Views\Mascotas\mostrar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotas', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php', 5)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Mascotas/mostrar', [], true)
+ 5 APPPATH\Controllers\MascotaController.php(15): view('Mascotas/mostrar')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-22 03:06:23 --> Invalid file: "common/head.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/head.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('common/head', [], true)
+ 3 APPPATH\Controllers\MascotaController.php(25): view('common/head')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-22 03:06:54 --> Invalid file: "mascota/editar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mascota/editar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mascota/editar', [], true)
+ 3 APPPATH\Controllers\MascotaController.php(27): view('mascota/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-22 03:41:14 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`adopcion`, CONSTRAINT `idMascota` FOREIGN KEY (`idMascota`) REFERENCES `mascota` (`idMascota`)) in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\MascotaController.php(45): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\MascotaController->delete('1')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-22 03:41:14 --> Cannot delete or update a parent row: a foreign key constraint fails (`adopciones`.`adopcion`, CONSTRAINT `idMascota` FOREIGN KEY (`idMascota`) REFERENCES `mascota` (`idMascota`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mascota`
+WHERE `idMascota` IN :idMascota:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MascotaController.php(45): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-22 03:42:31 --> The route for "Mascotas/mostrar" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Mascotas/mostrar')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\MascotaController.php(46): redirect('Mascotas/mostrar')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->delete('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')

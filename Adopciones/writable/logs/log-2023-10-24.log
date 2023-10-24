@@ -1,0 +1,172 @@
+ERROR - 2023-10-24 02:52:39 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'david', Object(SensitiveParameterValue), 'Adopciones', 3306, '', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\MascotaController.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\MascotaController->mostrar()
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\MascotaController.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\MascotaController->mostrar()
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#11 {main}
+CRITICAL - 2023-10-24 02:52:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mascota`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MascotaController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-24 03:06:40 --> Invalid file: "common/head.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/head.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('common/head', [], true)
+ 3 APPPATH\Controllers\MascotaController.php(69): view('common/head')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->buscar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-24 03:07:15 --> Invalid file: "mascota/mostrar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mascota/mostrar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mascota/mostrar', [], true)
+ 3 APPPATH\Controllers\MascotaController.php(71): view('mascota/mostrar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->buscar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-24 03:07:46 --> Undefined variable $mascotas
+in APPPATH\Views\Mascotas\mostrar.php on line 37.
+ 1 APPPATH\Views\Mascotas\mostrar.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotas', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Mascotas/mostrar', [], true)
+ 5 APPPATH\Controllers\MascotaController.php(71): view('Mascotas/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-24 03:10:09 --> Undefined variable $mascotas
+in APPPATH\Views\Mascotas\mostrar.php on line 37.
+ 1 APPPATH\Views\Mascotas\mostrar.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotas', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Mascotas/mostrar', [], true)
+ 5 APPPATH\Controllers\MascotaController.php(71): view('Mascotas/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-24 03:10:10 --> Undefined variable $mascotas
+in APPPATH\Views\Mascotas\mostrar.php on line 37.
+ 1 APPPATH\Views\Mascotas\mostrar.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotas', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Mascotas/mostrar', [], true)
+ 5 APPPATH\Controllers\MascotaController.php(71): view('Mascotas/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-24 13:11:06 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'david', Object(SensitiveParameterValue), 'Adopciones', 3306, '', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\MascotaController.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\MascotaController->mostrar()
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\MascotaController.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\MascotaController->mostrar()
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#11 {main}
+CRITICAL - 2023-10-24 13:11:06 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mascota`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MascotaController.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-24 15:03:54 --> Undefined variable $alumno
+in APPPATH\Views\Adoptadores\mostrar.php on line 22.
+ 1 APPPATH\Views\Adoptadores\mostrar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumno', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php', 22)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adoptadores/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(16): view('Adoptadores/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-24 15:10:40 --> Undefined array key "edad"
+in APPPATH\Controllers\MascotaController.php on line 55.
+ 1 APPPATH\Controllers\MascotaController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "edad"', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Controllers\\MascotaController.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-24 15:11:00 --> Undefined array key "edad"
+in APPPATH\Controllers\MascotaController.php on line 55.
+ 1 APPPATH\Controllers\MascotaController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "edad"', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Controllers\\MascotaController.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
