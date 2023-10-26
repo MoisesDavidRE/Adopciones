@@ -11,50 +11,50 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Mascotas
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?= base_url('index.php/mascota/mostrar') ?>">Mostrar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/mascota/agregar'); ?>">Agregar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/mascota/buscar'); ?>">Buscar</a></li>
+          <ul class="dropdown-menu" data-bs-theme="dark" >
+            <li><a class="dropdown-item" href="<?= base_url('/mascota/mostrar') ?>">Mostrar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/mascota/agregar'); ?>">Agregar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/mascota/buscar'); ?>">Buscar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Adoptadores
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?= base_url('index.php/adoptador/mostrar') ?>">Mostrar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/adoptador/agregar'); ?>">Agregar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/adoptador/buscar'); ?>">Buscar</a></li>
+          <ul class="dropdown-menu " data-bs-theme="dark" >
+            <li><a class="dropdown-item" href="<?= base_url('/adoptador/mostrar') ?>">Mostrar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/adoptador/agregar'); ?>">Agregar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/adoptador/buscar'); ?>">Buscar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Adopciones
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?= base_url('index.php/adopcion/mostrar') ?>">Mostrar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/adopcion/agregar'); ?>">Agregar </a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/adopcion/buscar'); ?>">Buscar</a></li>
+          <ul class="dropdown-menu" data-bs-theme="dark">
+            <li><a class="dropdown-item" href="<?= base_url('/adopcion/mostrar') ?>">Mostrar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/adopcion/agregar'); ?>">Agregar </a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/adopcion/buscar'); ?>">Buscar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Razas
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?= base_url('index.php/raza/mostrar') ?>">Mostrar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/raza/agregar'); ?>">Agregar </a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/raza/buscar'); ?>">Buscar</a></li>
+          <ul class="dropdown-menu" data-bs-theme="dark">
+            <li><a class="dropdown-item" href="<?= base_url('/raza/mostrar') ?>">Mostrar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/raza/agregar'); ?>">Agregar </a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/raza/buscar'); ?>">Buscar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dietas
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?= base_url('index.php/dieta/mostrar') ?>">Mostrar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/dieta/agregar'); ?>">Agregar</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('index.php/dieta/buscar'); ?>">Buscar</a></li>
+          <ul class="dropdown-menu" data-bs-theme="dark">
+            <li><a class="dropdown-item" href="<?= base_url('/dieta/mostrar') ?>">Mostrar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/dieta/agregar'); ?>">Agregar</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/dieta/buscar'); ?>">Buscar</a></li>
           </ul>
         </li>
       </ul>

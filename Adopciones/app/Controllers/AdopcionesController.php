@@ -15,7 +15,35 @@ class AdopcionesController extends BaseController
         return 
         view("common/header").
         view("common/menu").
-        view ("Adopciones/mostrar").
+        view ("Adopciones/mostrar",$data).
         view ("common/footer");
+    }
+
+    public function agregar()
+    {
+        return
+            view('common/header') .
+            view('common/menu') .
+            view('Adopciones/agregar') .
+            view('common/footer');
+    }
+
+    public function buscar()
+    {
+        $adopcionModel = model('AdopcionesModel');
+        if (isset($_GET['estatus'])) {
+            $estatus = $_GET['estatus'];
+            $mascota = $_GET['mascota'];
+            $data['adopciones'] = $adopcionModel->like('estatus', $estatus)->like('mascota',$mascota)->findAll();
+        } else {
+            $estatus = "";
+            $data['adopciones'] = $adopcionModel->findAll();
+        }
+
+        return
+            view ('common/header') .
+            view ('common/menu') .
+            view ('Adopciones/buscar', $data) .
+            view ('common/footer');
     }
 }

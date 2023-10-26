@@ -16,15 +16,21 @@
             </div>
         </div>
 
-            <form action="<?= base_url('mascota/agregar'); ?>" method="POST">
+            <form action="<?= base_url('mascota/insertar'); ?>" method="POST">
                 <?= csrf_field() ?>
+
+                <div class="mb-3">
+                    <label for="animal" class="form-label">Animal</label>
+                    <input type="text" class="form-control" name="animal" id="animal">
+                </div>
+
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" name="nombre" id="nombre">
                 </div>
 
                 <div class="mb-3">
-                    <label for="fechaNacimiento" class="form-label">Edad </label>
+                    <label for="edad" class="form-label">Edad </label>
                     <input type="number" class="form-control" name="edad" id="edad">
                 </div>
 
@@ -53,22 +59,27 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="tamanio">Tamaño de largo en CM</label>
-                    <input type="number" class="form-control" name="tamanio" id="tamanio">
+                    <label for="idRaza">Raza</label>
+                    <select name="idRaza" class="form-control">
+                    <?php foreach($razas as $raza) : ?>
+                            <option value="<?=$raza->idRaza ?>"><?=$raza->nombre ?></option>
+                        <?php endforeach ?>
+                    </select>
+                    <a href="<?= base_url('raza/agregar') ?>" style="margin-left: 700px;" class="btn btn-outline-success">Registrar otra raza</a>
                 </div>
 
-                <label for="Raza">Raza</label>
+                <label for="idDieta">Dieta</label>
                 <div class="mb-3">
-                    <select name="idGrado" class="form-control">
-
+                    <select name="idDieta" class="form-control">
+                    <?php foreach($dietas as $dieta) : ?>
+                            <option value="<?=$dieta->idDieta ?>"><?=$dieta->nombre ?></option>
+                        <?php endforeach ?>
                     </select>
                 </div>
-
 
                 <div class="mb-3">
                     <input type="submit" class="btn btn-success">
                 </div>
-
 
             </form>
 
