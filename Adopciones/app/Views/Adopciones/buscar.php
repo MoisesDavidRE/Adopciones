@@ -35,8 +35,10 @@
                             <select name="idAdoptador" class="form-control">
                                 <option value="" default></option>
                                 <?php foreach ($adoptadores as $adoptador): ?>
-                                    <option value="<?= $adoptador->idAdoptador ?>"><?= $adoptador->nombre .
-                                         " " . $adoptador->apPaterno . " " . $adoptador->apMaterno ?></option>
+                                    <option value="<?= $adoptador->idAdoptador ?>">
+                                        <?= $adoptador->nombre .
+                                            " " . $adoptador->apPaterno . " " . $adoptador->apMaterno ?>
+                                    </option>
                                 <?php endforeach ?>
                             </select>
                         </div>
@@ -59,27 +61,27 @@
                     <tr>
                         <td>
                             <?php
-                        $db = \Config\Database::connect();
-                        $idAdoptador = $adopcion->idAdoptador;
-                        $query = "SELECT nombre,apPaterno,apMaterno FROM adoptador WHERE idAdoptador = $idAdoptador";
-                        $resultado = $db->query($query)->getResultArray();
-                        if (!$resultado) {
-                            echo mysqli_error($db);
-                        } else
-                            echo $resultado[0]["nombre"] . " " . $resultado[0]["apPaterno"]. " " .$resultado[0]["apMaterno"];
-                        ?>
+                            $db = \Config\Database::connect();
+                            $idAdoptador = $adopcion->idAdoptador;
+                            $query = "SELECT nombre,apPaterno,apMaterno FROM adoptador WHERE idAdoptador = $idAdoptador";
+                            $resultado = $db->query($query)->getResultArray();
+                            if (!$resultado) {
+                                echo mysqli_error($db);
+                            } else
+                                echo $resultado[0]["nombre"] . " " . $resultado[0]["apPaterno"] . " " . $resultado[0]["apMaterno"];
+                            ?>
                         </td>
                         <td>
-                        <?php
-                        $db = \Config\Database::connect();
-                        $idMascota = $adopcion->idMascota;
-                        $query = "SELECT nombre FROM mascota WHERE idMascota = $idMascota";
-                        $resultado = $db->query($query)->getResultArray();
-                        if (!$resultado) {
-                            echo mysqli_error($db);
-                        } else
-                            echo $resultado[0]["nombre"];
-                        ?>
+                            <?php
+                            $db = \Config\Database::connect();
+                            $idMascota = $adopcion->idMascota;
+                            $query = "SELECT nombre FROM mascota WHERE idMascota = $idMascota";
+                            $resultado = $db->query($query)->getResultArray();
+                            if (!$resultado) {
+                                echo mysqli_error($db);
+                            } else
+                                echo $resultado[0]["nombre"];
+                            ?>
                         </td>
                         <td>
                             <?= $adopcion->fechaAdopcion ?>

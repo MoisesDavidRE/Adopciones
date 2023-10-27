@@ -71,7 +71,7 @@ class AdopcionesController extends BaseController
             $data['mascotas'] = $mascotaModel->findAll();
             $data['adoptadores'] = $adoptadorModel->findAll();
         } else {
-            $estatus = "";
+            $idAdoptador = "";
             $data['adopciones'] = $adopcionModel->findAll();
             $data['adoptadores'] = $adoptadorModel->findAll();
             $data['mascotas'] = $mascotaModel->findAll();

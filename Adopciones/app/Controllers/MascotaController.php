@@ -87,13 +87,13 @@ class MascotaController extends BaseController
         $rules = [
             'animal' => 'required|max_length[30]',
             'nombre'=> 'required|max_length[50]',
-            'sexo'=> 'required|min_length[5]',
-            'edad'=> 'required|min_length[5]',
-            'color'=> 'required|min_length[5]',
-            'tamanio'=> 'required|min_length[5]',
-            'peso'=> 'required|min_length[5]',
-            'idRaza'=> 'required|min_length[5]',
-            'idDieta'=> 'required|min_length[5]'
+            'sexo'=> 'required|min_length[1]',
+            'edad'=> 'required|min_length[1]',
+            'color'=> 'required|min_length[1]',
+            'tamanio'=> 'required|min_length[1]',
+            'peso'=> 'required|min_length[1]',
+            'idRaza'=> 'required|min_length[1]',
+            'idDieta'=> 'required|min_length[1]'
         ];
 
         if (! $this->validate($rules)) {
@@ -143,9 +143,11 @@ class MascotaController extends BaseController
                 ->like('color', $color)
                 ->like('tamanio', $tamanio)
                 ->like('peso', $peso)
+                ->like('idRaza',$idRaza)
+                ->like('idDieta', $idDieta)
                 ->findAll();
-                $data['razas'] = $razaModel->like('idRaza',$idRaza)->findAll();
-                $data['dietas'] = $dietaModel->like('idDieta', $idDieta)->findAll();
+                $data['razas'] = $razaModel->findAll();
+                $data['dietas'] = $dietaModel->findAll();
         } else {
             $nombre = "";
             $data['mascotas'] = $mascotaModel->findAll();

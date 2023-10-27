@@ -45,6 +45,28 @@
                         <label for="peso">Buscar por peso</label>
                         <input type="number" class="form-control" name="peso" class="mb-5">
 
+
+                        <div class="mb-3">
+                            <label for="idRaza" class="form-label">Buscar por raza</label>
+                            <select name="idRaza" class="form-control">
+                                <option value="" default></option>
+                                <?php foreach ($razas as $raza): ?>
+                                    <option value="<?= $raza->idRaza ?>">
+                                        <?= $raza->nombre ?>
+                                    </option>
+                                <?php endforeach ?>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="idDieta" class="form-label">Buscar por dieta</label>
+                            <select name="idDieta" class="form-control">
+                                <option value="" default></option>
+                                <?php foreach ($dietas as $dieta): ?>
+                                    <option value="<?= $dieta->idDieta ?>"><?= $dieta->nombre?></option>
+                                <?php endforeach ?>
+                            </select>
+                        </div>
+
                         <!-- <div class="mb-3">
                             <label for="idRaza">Buscar por raza</label>
                             <select name="idRaza" class="form-control">
