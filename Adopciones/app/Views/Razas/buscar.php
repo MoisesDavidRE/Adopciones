@@ -18,11 +18,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <form action="<?= base_url('index.php/adoptador/buscar/'); ?>" method="GET" class="mb-5">
-                        <label for="estatus">Buscar por nombre</label>
+                    <form action="<?= base_url('index.php/raza/buscar/'); ?>" method="GET" class="mb-5">
+                        <label for="nombre">Buscar por nombre</label>
                         <input type="text" class="form-control" name="nombre">
-                        <label for="mascota">Buscar por descripción</label>
-                        <input type="int" class="form-control" name="edad">
+                        <label for="descripcion">Buscar por descripción</label>
+                        <input type="text" class="form-control" name="descripcion">
 
                         <input type="submit" class="btn btn-success mt-4" value="Buscar">
                     </form>

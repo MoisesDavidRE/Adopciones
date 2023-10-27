@@ -9,20 +9,33 @@
                         <img src="<?= base_url('assets/images/Adopciones.jpg'); ?>" class="d-block w-100"
                             alt="Adopciones">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Adopciones</h2>
-                            <p>Mira las adopciones registradas hasta el momento 👌</p>
+                            <h2><a  href="<?= base_url('/adopcion/mostrar') ?>">Adopciones</a></h2>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2500">
                         <img src="<?= base_url('assets/images/Adoptador.jpg'); ?>" class="d-block w-100"
                             alt="Adoptador">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Adopciones</h2>
-                            <p>Mira las adopciones registradas hasta el momento 👌</p>
+                            <h2><a  href="<?= base_url('/adoptador/mostrar') ?>">Adoptadores</a></h2>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2500">
                         <img src="<?= base_url('assets/images/Mascotas.jpg'); ?>" class="d-block w-100" alt="Mascotas">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h2><a  href="<?= base_url('/mascota/mostrar') ?>">Mascotas</a></h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="<?= base_url('assets/images/Dietas.jpg'); ?>" class="d-block w-100" alt="Dietas">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h2><a  href="<?= base_url('/dieta/mostrar') ?>">Dietas</a></h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="<?= base_url('assets/images/Raza.jpg'); ?>" class="d-block w-100" alt="Razas">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h2><a  href="<?= base_url('/raza/mostrar') ?>">Razas</a></h2>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
