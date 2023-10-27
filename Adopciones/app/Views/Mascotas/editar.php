@@ -65,6 +65,19 @@
                 <div class="mb-3">
                     <label for="idRaza">Raza</label>
                     <select name="idRaza" class="form-control">
+                    <option value="<?= $mascota->idRaza?>" default>
+                    <?php
+                        $db = \Config\Database::connect();
+                        $idRaza = $mascota->idRaza;
+                        $query = "SELECT nombre FROM raza WHERE idRaza = $idRaza";
+                        $resultado = $db->query($query)->getResultArray();
+                        if (!$resultado) {
+                            // Error al conectar a la base de datos
+                            echo mysqli_error($db);
+                        } else
+                            echo $resultado[0]["nombre"];
+                        ?>
+                    </option>
                        <?php foreach($razas as $raza) : ?>
                             <option value="<?=$raza->idRaza ?>"><?=$raza->nombre ?></option>
                         <?php endforeach ?>
@@ -75,6 +88,19 @@
                 <label for="idDieta">Dieta</label>
                 <div class="mb-3">
                     <select name="idDieta" class="form-control">
+                    <option value="<?= $mascota->idDieta ?>" default>
+                    <?php
+                        $db = \Config\Database::connect();
+                        $idDieta = $mascota->idDieta;
+                        $query = "SELECT nombre FROM dieta WHERE idDieta = $idDieta";
+                        $resultado = $db->query($query)->getResultArray();
+                        if (!$resultado) {
+                            // Error al conectar a la base de datos
+                            echo mysqli_error($db);
+                        } else
+                            echo $resultado[0]["nombre"];
+                        ?>
+                    </option>
                     <?php foreach($dietas as $dieta) : ?>
                             <option value="<?=$dieta->idDieta ?>"><?=$dieta->nombre ?></option>
                         <?php endforeach ?>

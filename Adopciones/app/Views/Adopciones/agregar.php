@@ -16,26 +16,41 @@
             </div>
         </div>
 
-            <form action="<?= base_url('/adopcion/agregar'); ?>" method="POST">
+            <form action="<?= base_url('/adopcion/insertar'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Adoptador</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre">
+                    <label for="idAdoptador" class="form-label">Adoptador</label>
+                    <select name="idAdoptador" class="form-control">
+                        <option value="" default></option>
+                    <?php foreach($adoptadores as $adoptador) : ?>
+                            <option value="<?=$adoptador->idAdoptador ?>"><?=$adoptador->nombre . 
+                            " " . $adoptador->apPaterno . " " . $adoptador->apMaterno ?></option>
+                        <?php endforeach ?>
+                    </select>
                 </div>
 
                 <div class="mb-3">
-                    <label for="fechaNacimiento" class="form-label">Mascota</label>
-                    <input type="number" class="form-control" name="edad" id="edad">
+                    <label for="idMascota" class="form-label">Mascota</label>
+                    <select name="idMascota" class="form-control">
+                    <option value="" default></option>
+                    <?php foreach($mascotas as $mascota) : ?>
+                            <option value="<?=$mascota->idMascota ?>"><?=$mascota->nombre?></option>
+                        <?php endforeach ?>
+                    </select>
                 </div>
 
                 <div class="mb-3">
-                    <label for="color">Fecha de adopción</label>
-                    <input type="text" class="form-control" name="color" id="color">
+                    <label for="fechaAdopcion">Fecha de adopción</label>
+                    <input type="date" class="form-control" name="fechaAdopcion" id="fechaAdopcion">
                 </div>
                 
                 <div class="mb-3">
                     <label for="tamanio">Estatus</label>
-                    <input type="number" class="form-control" name="tamanio" id="tamanio">
+                    <select name="estatus" id="estatus">
+                        <option value="Confirmada">Confirmada</option>
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="En revision">En revisión</option>
+                    </select>
                 </div>
 
                 <div class="mb-3">

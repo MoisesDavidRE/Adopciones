@@ -18,11 +18,16 @@ $routes->post('/mascota/update', 'MascotaController::update');
 $routes->get('/adopcion/mostrar', 'AdopcionesController::mostrar');
 $routes->get('/adopcion/agregar', 'AdopcionesController::agregar');
 $routes->get('/adopcion/buscar','AdopcionesController::buscar');
+$routes->post('/adopcion/insertar', 'AdopcionesController::insertar');
+$routes->get('/adopcion/delete/(:num)','AdopcionesController::delete/$1');
+$routes->get('/adopcion/editar/(:num)', 'AdopcionesController::editar/$1');
+$routes->post('/adopcion/update', 'AdopcionesController::update');
 
 // Adoptador
 $routes->get('/adoptador/mostrar', 'AdoptadorController::mostrar');
 $routes->get('/adoptador/agregar', 'AdoptadorController::agregar');
 $routes->get('/adoptador/buscar', 'AdoptadorController::buscar');
+
 
 // Raza
 
