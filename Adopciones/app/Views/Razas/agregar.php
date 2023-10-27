@@ -16,7 +16,7 @@
             </div>
         </div>
 
-            <form action="<?= base_url('/raza/agregar'); ?>" method="POST">
+            <form action="<?= base_url('/raza/insertar'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre de la raza</label>
@@ -24,8 +24,8 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="fechaNacimiento" class="form-label">Descripción de la raza</label>
-                    <input type="number" class="form-control" name="edad" id="edad">
+                    <label for="descripcion" class="form-label">Descripción de la raza</label>
+                    <input type="text" class="form-control" name="descripcion" id="descripcion">
                 </div>
 
                 <div class="mb-3">

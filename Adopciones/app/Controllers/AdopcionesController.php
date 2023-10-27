@@ -19,19 +19,44 @@ class AdopcionesController extends BaseController
         view ("common/footer");
     }
 
-    public function agregar()
-    {
+    public function agregar(){
         $adoptadorModel = model("AdoptadorModel");
         $mascotasModel = model("MascotaModel");
         $data["adoptadores"] = $adoptadorModel->findAll();
         $data["mascotas"] = $mascotasModel->findAll();
+
+
+        $validation =  \Config\Services::validation();
         
-        return
-            view('common/header') .
+        if ((strtolower($this->request->getMethod()) === 'get')) {
+            return 
+            view('common/header',$data) .
             view('common/menu') .
             view('Adopciones/agregar',$data) .
             view('common/footer');
+        }
+
+        $rules = [
+            'idAdoptador' => 'required|min_length[1]|max_length[3]',
+            'idMascota'=> 'required|min_length[1]|max_length[3]',
+            'fechaAdopcion'=> 'required|min_length[3]',
+            'estatus'=> 'required|min_length[3]'
+        ];
+
+        if (! $this->validate($rules)) {
+            return 
+            view('common/header',$data) .
+        view('common/menu') .
+        view('Adopciones/agregar',['validation' => $validation],$data) .
+        view('common/footer');
+        }else{
+            if($this->insertar()){
+                return redirect('adopcion/mostrar');
+            }
+        }
+       
     }
+
 
     public function buscar()
     {
@@ -69,7 +94,7 @@ class AdopcionesController extends BaseController
             "estatus" => $_POST['estatus']
         ];
         $adopcionModel->insert($data, false);
-        return redirect('adopcion/mostrar');
+        return true;
     }
 
     public function delete($idAdopcion)

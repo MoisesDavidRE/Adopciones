@@ -7,16 +7,16 @@
         ?>
         <div class="col-8">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-6"></div>
-                <div class="col-5">
-                    <h2 class="mb-5">AGREGAR MASCOTA</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6"></div>
+                    <div class="col-5">
+                        <h2 class="mb-5">AGREGAR MASCOTA</h2>
+                    </div>
                 </div>
             </div>
-        </div>
 
-            <form action="<?= base_url('mascota/insertar'); ?>" method="POST">
+            <form action="<?= base_url('mascota/agregar'); ?>" method="POST">
                 <?= csrf_field() ?>
 
                 <div class="mb-3">
@@ -47,7 +47,7 @@
                     <label for="color">Color</label>
                     <input type="text" class="form-control" name="color" id="color">
                 </div>
-                
+
                 <div class="mb-3">
                     <label for="tamanio">Tamaño de largo en CM</label>
                     <input type="number" class="form-control" name="tamanio" id="tamanio">
@@ -61,18 +61,19 @@
                 <div class="mb-3">
                     <label for="idRaza">Raza</label>
                     <select name="idRaza" class="form-control">
-                    <?php foreach($razas as $raza) : ?>
-                            <option value="<?=$raza->idRaza ?>"><?=$raza->nombre ?></option>
+                        <?php foreach ($razas as $raza): ?>
+                            <option value="<?= $raza->idRaza ?>"><?= $raza->nombre ?></option>
                         <?php endforeach ?>
                     </select>
-                    <a href="<?= base_url('raza/agregar') ?>" style="margin-left: 700px;" class="btn btn-outline-success">Registrar otra raza</a>
+                    <a href="<?= base_url('raza/agregar') ?>" style="margin-left: 700px;"
+                        class="btn btn-outline-success">Registrar otra raza</a>
                 </div>
 
                 <label for="idDieta">Dieta</label>
                 <div class="mb-3">
                     <select name="idDieta" class="form-control">
-                    <?php foreach($dietas as $dieta) : ?>
-                            <option value="<?=$dieta->idDieta ?>"><?=$dieta->nombre ?></option>
+                        <?php foreach ($dietas as $dieta): ?>
+                            <option value="<?= $dieta->idDieta ?>"><?= $dieta->nombre ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>

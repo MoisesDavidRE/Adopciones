@@ -16,7 +16,7 @@
             </div>
         </div>
 
-            <form action="<?= base_url('/adopcion/insertar'); ?>" method="POST">
+            <form action="<?= base_url('/adopcion/agregar'); ?>" method="POST">
                 <?= csrf_field() ?>
                 <div class="mb-3">
                     <label for="idAdoptador" class="form-label">Adoptador</label>

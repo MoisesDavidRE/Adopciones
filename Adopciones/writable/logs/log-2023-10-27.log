@@ -367,3 +367,1158 @@ WHERE `adopcion`.`idAdopcion` IN :adopcion.idAdopcion:', [...], false)
  8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 03:54:22 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('6')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 03:54:22 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('6')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 03:56:08 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('6')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 03:56:08 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('6')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:04:42 --> Undefined variable $adopcion
+in APPPATH\Views\Adopciones\editar.php on line 21.
+ 1 APPPATH\Views\Adopciones\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcion', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adopciones\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adopciones\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adopciones/editar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(63): view('Adopciones/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->editar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:09:43 --> Undefined variable $adopcion
+in APPPATH\Views\Adopciones\editar.php on line 21.
+ 1 APPPATH\Views\Adopciones\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcion', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adopciones\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adopciones\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adopciones/editar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(63): view('Adopciones/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->editar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:10:49 --> Undefined variable $adopcion
+in APPPATH\Views\Adopciones\editar.php on line 21.
+ 1 APPPATH\Views\Adopciones\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcion', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adopciones\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adopciones\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adopciones/editar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(63): view('Adopciones/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->editar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:10:50 --> Undefined variable $adopcion
+in APPPATH\Views\Adopciones\editar.php on line 21.
+ 1 APPPATH\Views\Adopciones\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adopcion', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adopciones\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adopciones\\editar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adopciones/editar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(63): view('Adopciones/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->editar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:16:28 --> Undefined constant "r"
+in APPPATH\Views\Adoptadores\editar.php on line 21.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adoptadores/editar', [], true)
+ 4 APPPATH\Controllers\AdoptadorController.php(63): view('Adoptadores/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->editar('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:16:38 --> Undefined constant "r"
+in APPPATH\Views\Adoptadores\editar.php on line 21.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adoptadores/editar', [], true)
+ 4 APPPATH\Controllers\AdoptadorController.php(63): view('Adoptadores/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->editar('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:16:41 --> Undefined constant "r"
+in APPPATH\Views\Adoptadores\editar.php on line 21.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adoptadores/editar', [], true)
+ 4 APPPATH\Controllers\AdoptadorController.php(63): view('Adoptadores/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->editar('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:17:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:17:41 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:17:44 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:17:44 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:17:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:17:49 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:18:01 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:18:01 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:18:27 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('6')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:18:27 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('6')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:19:47 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('6')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:19:47 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('6')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:19:57 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:19:57 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(51): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:22:58 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:22:58 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:23:02 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:23:02 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:23:06 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:23:06 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:23:12 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('4')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:23:12 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('4')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:23:32 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:23:32 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:23:40 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:23:40 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:24:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:24:18 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:24:22 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:24:22 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:24:25 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:24:25 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:24:30 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('5')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:24:30 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('5')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:26:00 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(56): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:26:00 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(56): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:32:47 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Adoptadores\mostrar.php on line 27.
+ 1 APPPATH\Views\Adoptadores\mostrar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adoptadores/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(16): view('Adoptadores/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:32:49 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Adoptadores\mostrar.php on line 27.
+ 1 APPPATH\Views\Adoptadores\mostrar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adoptadores/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(16): view('Adoptadores/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:33:16 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Adoptadores\mostrar.php on line 15.
+ 1 APPPATH\Views\Adoptadores\mostrar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adoptadores/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(16): view('Adoptadores/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:33:33 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Adoptadores\mostrar.php on line 50.
+ 1 APPPATH\Views\Adoptadores\mostrar.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adoptadores/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(16): view('Adoptadores/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:34:00 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Adoptadores\mostrar.php on line 53.
+ 1 APPPATH\Views\Adoptadores\mostrar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adoptadores/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(16): view('Adoptadores/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:34:09 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\Adoptadores\mostrar.php on line 53.
+ 1 APPPATH\Views\Adoptadores\mostrar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Adoptadores\\mostrar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Adoptadores/mostrar', [], true)
+ 5 APPPATH\Controllers\AdoptadorController.php(16): view('Adoptadores/mostrar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:34:58 --> Call to undefined method App\Models\AdoptadorModel::has_foreign_key
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\Model->__call('has_foreign_key', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:35:38 --> Call to undefined method App\Models\AdoptadorModel::has_foreign_key
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\Model->__call('has_foreign_key', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 04:36:35 --> Call to undefined method App\Models\AdoptadorModel::has_foreign_key
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\AdoptadorController.php(52): CodeIgniter\Model->__call('has_foreign_key', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:37:05 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:37:05 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:41:45 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\MascotaController.php(57): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\MascotaController->delete('14')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:41:45 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mascota`
+WHERE `idMascota` IN :idMascota:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MascotaController.php(57): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->delete('14')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:41:46 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\MascotaController.php(57): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\MascotaController->delete('14')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:41:46 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mascota`
+WHERE `idMascota` IN :idMascota:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MascotaController.php(57): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->delete('14')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:41:51 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\MascotaController.php(57): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\MascotaController->delete('15')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:41:51 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mascota`
+WHERE `idMascota` IN :idMascota:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MascotaController.php(57): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->delete('15')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:41:54 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\MascotaController.php(57): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\MascotaController->delete('16')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:41:54 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mascota`
+WHERE `idMascota` IN :idMascota:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MascotaController.php(57): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->delete('16')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:42:00 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\MascotaController.php(57): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\MascotaController->delete('17')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:42:00 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mascota`
+WHERE `idMascota` IN :idMascota:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MascotaController.php(57): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->delete('17')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:42:13 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:42:13 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:42:17 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:42:17 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('3')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:42:20 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('4')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:42:20 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('4')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:42:23 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('5')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:42:23 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('5')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+ERROR - 2023-10-27 04:42:26 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ad...', 0)
+#1 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ad...')
+#2 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ad...')
+#3 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ad...', Array, false)
+#4 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\app\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('6')
+#8 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+#9 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2023-10-27 04:42:26 --> Cannot delete or update a parent row: a foreign key constraint fails
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `adoptador`
+WHERE `idAdoptador` IN :idAdoptador:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AdoptadorController.php(53): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdoptadorController->delete('6')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdoptadorController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 12:33:12 --> Invalid file: "mascota/agregar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mascota/agregar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mascota/agregar', [...], true)
+ 3 APPPATH\Controllers\MascotaController.php(76): view('mascota/agregar', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->agregar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 12:33:34 --> Invalid file: "mascota/agregar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mascota/agregar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mascota/agregar', [], true)
+ 3 APPPATH\Controllers\MascotaController.php(55): view('mascota/agregar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->agregar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 12:33:36 --> Invalid file: "mascota/agregar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mascota/agregar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mascota/agregar', [], true)
+ 3 APPPATH\Controllers\MascotaController.php(55): view('mascota/agregar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->agregar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 12:33:38 --> Invalid file: "mascota/agregar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mascota/agregar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mascota/agregar', [], true)
+ 3 APPPATH\Controllers\MascotaController.php(55): view('mascota/agregar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->agregar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 12:37:24 --> Undefined variable $razas
+in APPPATH\Views\Mascotas\agregar.php on line 64.
+ 1 APPPATH\Views\Mascotas\agregar.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $razas', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\agregar.php', 64)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Views\\Mascotas\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Mascotas/agregar', [...], true)
+ 5 APPPATH\Controllers\MascotaController.php(75): view('Mascotas/agregar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 12:54:17 --> "min_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 317.
+ 1 SYSTEMPATH\Validation\Validation.php(317): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('idRaza', 'idRaza', '1', [...], [...])
+ 3 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\MascotaController.php(71): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 12:55:13 --> "max_legth" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 317.
+ 1 SYSTEMPATH\Validation\Validation.php(317): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('max_legth')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Natalia', [...], [...])
+ 3 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\MascotaController.php(71): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 12:55:24 --> "min_lenght" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 317.
+ 1 SYSTEMPATH\Validation\Validation.php(317): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('sexo', 'sexo', 'Macho', [...], [...])
+ 3 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\MascotaController.php(71): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 13:29:29 --> Undefined array key "aliemntosExcluidos"
+in APPPATH\Controllers\DietaController.php on line 82.
+ 1 APPPATH\Controllers\DietaController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "aliemntosExcluidos"', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Controllers\\DietaController.php', 82)
+ 2 APPPATH\Controllers\DietaController.php(50): App\Controllers\DietaController->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DietaController->agregar()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietaController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 13:38:03 --> Undefined array key "idDieta"
+in APPPATH\Controllers\DietaController.php on line 111.
+ 1 APPPATH\Controllers\DietaController.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idDieta"', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Controllers\\DietaController.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DietaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 13:38:34 --> Undefined array key "idDieta"
+in APPPATH\Controllers\DietaController.php on line 111.
+ 1 APPPATH\Controllers\DietaController.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idDieta"', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Controllers\\DietaController.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DietaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 13:38:36 --> Undefined array key "idDieta"
+in APPPATH\Controllers\DietaController.php on line 111.
+ 1 APPPATH\Controllers\DietaController.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idDieta"', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Controllers\\DietaController.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DietaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 13:38:38 --> Undefined array key "idDieta"
+in APPPATH\Controllers\DietaController.php on line 111.
+ 1 APPPATH\Controllers\DietaController.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idDieta"', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Controllers\\DietaController.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DietaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 13:39:05 --> Undefined array key "idDieta"
+in APPPATH\Controllers\DietaController.php on line 111.
+ 1 APPPATH\Controllers\DietaController.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idDieta"', 'C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\app\\Controllers\\DietaController.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\DietaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DietaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')
+CRITICAL - 2023-10-27 15:00:35 --> Too few arguments to function App\Controllers\MascotaController::editar(), 0 passed in C:\Users\Moisés David\Desktop\Adopciones\Adopciones\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MascotaController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MascotaController->editar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\Adopciones\\Adopciones\\public\\index.php')

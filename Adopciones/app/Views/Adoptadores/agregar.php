@@ -18,55 +18,56 @@
 
             <form action="<?= base_url('/adoptador/agregar'); ?>" method="POST">
                 <?= csrf_field() ?>
+                <input type="hidden" name ="idAdoptador"/>
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" name="nombre" id="nombre">
                 </div>
 
                 <div class="mb-3">
-                    <label for="fechaNacimiento" class="form-label">Apellido Paterno </label>
+                    <label for="apPaterno" class="form-label">Apellido Paterno </label>
+                    <input type="text" class="form-control" name="apPaterno" id="apPaterno">
+                </div>
+
+                <div class="mb-3">
+                    <label for="apMaterno">Apellido Materno</label>
+                    <input type="text" class="form-control" name="apMaterno" id="apMaterno">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="edad">Edad</label>
                     <input type="number" class="form-control" name="edad" id="edad">
                 </div>
 
                 <div class="mb-3">
-                    <label for="color">Apellido Materno</label>
-                    <input type="text" class="form-control" name="color" id="color">
-                </div>
-                
-                <div class="mb-3">
-                    <label for="tamanio">Edad</label>
-                    <input type="number" class="form-control" name="tamanio" id="tamanio">
+                    <label for="telefono">Teléfono de contacto</label>
+                    <input type="text" class="form-control" name="telefono" id="telefono">
                 </div>
 
                 <div class="mb-3">
-                    <label for="peso">Teléfono de contacto</label>
-                    <input type="number" class="form-control" name="peso" id="peso">
-                </div>
-
-                <div class="mb-3">
-                    <label for="tamanio">Email</label>
-                    <input type="number" class="form-control" name="tamanio" id="tamanio">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" name="email" id="email">
                 </div>
 
 
                 <div class="mb-3">
-                    <label for="tamanio">Estado</label>
-                    <input type="number" class="form-control" name="tamanio" id="tamanio">
+                    <label for="estado">Estado</label>
+                    <input type="text" class="form-control" name="estado" id="estado" >
                 </div>
 
                 <div class="mb-3">
-                    <label for="tamanio">Ciudad</label>
-                    <input type="number" class="form-control" name="tamanio" id="tamanio">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" class="form-control" name="ciudad" id="ciudad" >
                 </div>
 
                 <div class="mb-3">
-                    <label for="tamanio">C.P.</label>
-                    <input type="number" class="form-control" name="tamanio" id="tamanio">
+                    <label for="cp">C.P.</label>
+                    <input type="number" class="form-control" name="cp" id="cp">
                 </div>
 
                 <div class="mb-3">
-                    <label for="tamanio">Calle</label>
-                    <input type="text" class="form-control" name="tamanio" id="tamanio">
+                    <label for="calle">Calle</label>
+                    <input type="text" class="form-control" name="calle" id="calle">
                 </div>
 
                 <div class="mb-3">

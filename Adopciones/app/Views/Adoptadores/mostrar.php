@@ -11,18 +11,32 @@
                     <th>Dirección</th>
                 </thead>
                 <tbody>
-                <?php foreach($adoptadores as $adoptador): ?>
-                    <tr>
-                        <td><?=$adoptador->nombre . " ". $adoptador->apPaterno . " ". $adoptador->apMaterno ?></td>
-                        <td><?=$adoptador->edad ?></td>
-                        <td><?=$adoptador->telefono ?></td>
-                        <td><?=$adoptador->email ?></td>
-                        <td><?=$adoptador->estado . ", ". $adoptador->ciudad . ", CP " . $adoptador->cp. ", " . $adoptador->calle?></td>
-                        <td>    
-                            <a href="<?=base_url('index.php/alumno/delete/'.$adoptador->idAdoptador);?>">Eliminar</a>
-                            <a href="<?=base_url('index.php/alumno/editar/'.$adoptador->idAdoptador);?>">Editar</a>
-                        </td>
-                    </tr>
+
+
+                    <?php foreach ($adoptadores as $adoptador): ?>
+                        <tr>
+                            <td>
+                                <?= $adoptador->nombre . " " . $adoptador->apPaterno . " " . $adoptador->apMaterno ?>
+                            </td>
+                            <td>
+                                <?= $adoptador->edad ?>
+                            </td>
+                            <td>
+                                <?= $adoptador->telefono ?>
+                            </td>
+                            <td>
+                                <?= $adoptador->email ?>
+                            </td>
+                            <td>
+                                <?= $adoptador->estado . ", " . $adoptador->ciudad . ", CP " . $adoptador->cp . ", " . $adoptador->calle ?>
+                            </td>
+                            <td>
+                                <a
+                                    href="<?= base_url('index.php/adoptador/delete/' . $adoptador->idAdoptador); ?>">Eliminar</a>
+                                <a
+                                    href="<?= base_url('index.php/adoptador/editar/' . $adoptador->idAdoptador); ?>">Editar</a>
+                            </td>
+                        </tr>
                     <?php endforeach ?>
                 </tbody>
             </table>

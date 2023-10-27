@@ -45,6 +45,44 @@ class RazaController extends BaseController
             view ('common/footer');
     }
 
+    public function insertar()
+    {
+        $razaModel = model('RazaModel');
+        $data = [
+            "nombre" => $_POST['nombre'],
+            "descripcion" => $_POST['descripcion']
+        ];
+        $razaModel->insert($data, false);
+        return redirect('raza/mostrar');
+    }
+
+    public function editar($idRaza)
+    {
+        $razaModel = model('RazaModel');
+        $data['raza'] = $razaModel->find($idRaza);
+        return
+            view('common/header') .
+            view('common/menu') .
+            view('Razas/editar', $data) .
+            view('common/footer');
+    }
+
+    public function update()
+    {
+        $razaModel = model('RazaModel');
+        $data = [
+            "nombre" => $_POST['nombre'],
+            "descripcion" => $_POST['descripcion']
+        ];
+        $razaModel->update($_POST['idRaza'], $data);
+        return redirect('raza/mostrar');
+    }
     
+    public function delete($idRaza)
+    {
+        $razaModel = model('RazaModel');
+        $razaModel->delete($idRaza);
+        return redirect('raza/mostrar');
+    }
 }
 

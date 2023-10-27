@@ -16,7 +16,7 @@
             </div>
         </div>
 
-            <form action="<?= base_url('mascota/update'); ?>" method="POST">
+            <form action="<?= base_url('mascota/editar/'.$mascota->idMascota); ?>" method="POST">
                 <?= csrf_field() ?>
                 <input type="hidden" name ="idMascota" value="<?= $mascota->idMascota ?>" />
                 <div class="mb-3">

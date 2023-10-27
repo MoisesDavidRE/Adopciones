@@ -30,26 +30,86 @@ class MascotaController extends BaseController
         $data['dietas'] = $dietaModel->findAll();
         $data['razas'] = $razaModel->findAll();
 
-        return
-            view('common/header') .
+        $validation =  \Config\Services::validation();
+
+        if ((strtolower($this->request->getMethod()) === 'get')) {
+            return 
+            view('common/header',$data) .
             view('common/menu') .
-            view('Mascotas/editar', $data) .
+            view('Mascotas/editar',$data) .
             view('common/footer');
+        }
+        
+        $rules = [
+            'animal' => 'required|max_length[30]',
+            'nombre'=> 'required|min_length[1]',
+            'sexo'=> 'required|min_length[1]',
+            'edad'=> 'required|min_length[1]',
+            'color'=> 'required|min_length[1]',
+            'tamanio'=> 'required|min_length[1]',
+            'peso'=> 'required|min_length[1]',
+            'idRaza'=> 'required|min_length[1]',
+            'idDieta'=> 'required|min_length[1]'
+        ];
+
+        if (! $this->validate($rules)) {
+            return 
+            view('common/header',$data) .
+        view('common/menu') .
+        view('Mascotas/editar',['validation' => $validation],$data) .
+        view('common/footer');
+        }else{
+            if($this->update()){
+                return redirect('mascota/mostrar');
+            }
+        }
     }
 
 
-    public function agregar()
-    {
+    public function agregar(){
         $dietaModel = model('DietaModel');
         $razaModel = model('RazaModel');
+
         $data['dietas'] = $dietaModel->findAll();
         $data['razas'] = $razaModel->findAll();
-        return
-            view('common/header') .
+
+
+        $validation =  \Config\Services::validation();
+        
+        if ((strtolower($this->request->getMethod()) === 'get')) {
+            return 
+            view('common/header',$data) .
             view('common/menu') .
-            view('Mascotas/agregar', $data) .
+            view('Mascotas/agregar',$data) .
             view('common/footer');
+        }
+
+        $rules = [
+            'animal' => 'required|max_length[30]',
+            'nombre'=> 'required|max_length[50]',
+            'sexo'=> 'required|min_length[5]',
+            'edad'=> 'required|min_length[5]',
+            'color'=> 'required|min_length[5]',
+            'tamanio'=> 'required|min_length[5]',
+            'peso'=> 'required|min_length[5]',
+            'idRaza'=> 'required|min_length[5]',
+            'idDieta'=> 'required|min_length[5]'
+        ];
+
+        if (! $this->validate($rules)) {
+            return 
+            view('common/header',$data) .
+        view('common/menu') .
+        view('Mascotas/agregar',['validation' => $validation],$data) .
+        view('common/footer');
+        }else{
+            if($this->insertar()){
+                return redirect('mascota/mostrar');
+            }
+        }
+       
     }
+
 
     public function delete($idMascota)
     {
@@ -115,7 +175,7 @@ class MascotaController extends BaseController
             'idDieta' => $_POST['idDieta']
         ];
         $mascotaModel->insert($data, false);
-        return redirect('mascota/mostrar');
+        return true;
     }
 
 
@@ -135,7 +195,7 @@ class MascotaController extends BaseController
             'idDieta' => $_POST['idDieta']
         ];
         $mascotaModel->update($_POST['idMascota'], $data);
-        return redirect('mascota/mostrar');
+        return true;
     }
 }
 

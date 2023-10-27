@@ -16,8 +16,8 @@
                         <td><?=$raza->descripcion?></td>
                         <td><?=$raza->created_at ?></td>
                         <td>    
-                            <a href="<?=base_url('index.php/adopcion/delete/'.$raza->idRaza);?>">Eliminar</a>
-                            <a href="<?=base_url('index.php/adopcion/editar/'.$raza->idRaza);?>">Editar</a>
+                            <a href="<?=base_url('index.php/raza/delete/'.$raza->idRaza);?>">Eliminar</a>
+                            <a href="<?=base_url('index.php/raza/editar/'.$raza->idRaza);?>">Editar</a>
                         </td>
                     </tr>
                     <?php endforeach ?>

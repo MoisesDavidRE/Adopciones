@@ -15,8 +15,8 @@
                         <td><?=$dieta->nombre ?></td>
                         <td><?=$dieta->descripcion?></td>
                         <td>    
-                            <a href="<?=base_url('index.php/adopcion/delete/'.$dieta->idDieta);?>">Eliminar</a>
-                            <a href="<?=base_url('index.php/adopcion/editar/'.$dieta->idDieta);?>">Editar</a>
+                            <a href="<?=base_url('index.php/dieta/delete/'.$dieta->idDieta);?>">Eliminar</a>
+                            <a href="<?=base_url('index.php/dieta/editar/'.$dieta->idDieta);?>">Editar</a>
                         </td>
                     </tr>
                     <?php endforeach ?>
